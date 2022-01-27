@@ -1,0 +1,321 @@
+@font-face{
+    font-family:"Azo Sans";
+    src:url(Fonts/AzoSans-Medium.ttf);
+    font-weight:500;
+    font-style:normal;
+}
+@font-face{
+    font-family: "Azo Sans";
+    src:url(Fonts/AzoSans-Regular.ttf);
+    font-weight:400;
+    font-style:normal;
+}
+@font-face{
+    font-family:"Azo Sans";
+    src:url(Fonts/AzoSans-Bold.ttf);
+    font-weight:700;
+    font-style:normal;
+
+}
+
+
+.body{
+    background-color: #2936A2;
+    padding:0;
+    margin:0;
+}
+/*.container-fluid{
+    max-width:1400px;
+}*/
+
+.navbar-light .navbar-nav .link{
+    font-family: "Azo Sans";
+    font-weight: 500;
+    font-size:12px;
+    color:white;
+    letter-spacing: 2px;
+    position:relative;
+}
+/*.login-img{
+    width:20px;
+    height:20px;
+    margin-right:1px;
+}*/
+
+.login-arrow{
+    color:white;
+    border-radius:40px;
+    padding:3px;
+    border-top:2px solid #79C91B;
+    border-right:2px solid #79C91B;
+    border-bottom:2px solid #79C91B;
+    margin-right:2px;
+}
+.login{
+    font-family: "Azo Sans";
+    font-weight: 500;
+    font-size:12px;
+    color:#79C91B;
+    letter-spacing: 2px;
+}
+.login:hover{
+    color:maroon;
+    text-decoration: none;
+}
+
+.navbar-light .navbar-nav .link::after{
+    position:absolute;
+    content:"";
+    top:85%;
+    left:20%;
+    background-image:linear-gradient(to right,#70C618, #C1FA7F);
+    opacity:0;
+    width:0%;
+    height:2px;
+    transition:0.5s linear;
+}
+
+.navbar-light .navbar-nav .link:hover::after{
+    opacity:1;
+    width:80%;
+}
+.navbar-light .navbar-nav .link:hover{
+    color:#79C91B;
+}
+.partner-heading{
+    font-family: "Azo Sans";
+    font-weight: 700;
+    font-size:50px;
+    color:white;
+}
+.partner-description{
+    font-family: "Azo Sans";
+    font-weight: 400;
+    font-size:24px;
+    color:#79C91B;
+}
+.grid-big{
+    animation:grid-img 2s linear infinite alternate;
+}
+@keyframes grid-img{
+   0%{
+       transform:rotateY(0);
+   }
+   50%{
+       transform:rotateY(90deg);
+   }
+   100%{
+    transform:rotateY(180deg); 
+   }
+   
+
+}
+.card{
+    position:relative;
+    background-color: #20267B;
+    
+    border-radius:30px;
+    align-items:flex-start;
+    width:290px;
+    height:290px;
+    padding:42px 0px 20px 37px;
+    z-index:1;
+}
+.background{
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    height:0;
+    overflow: hidden;
+    width: 100%;
+    transition: 1s ease;
+    z-index:-1;
+    border-radius:30px;
+}
+.card:hover .background{
+    height:100%;
+}
+.card:hover .card-head{
+    color:#0063C5;
+    opacity:100%;
+}
+.count{
+    background-color: #79C91B;
+    padding:10px;
+    transform:rotate(45deg);
+}
+.count-text{
+    color:#FFFFFF;
+    display:inline-block;
+    transform:rotate(-45deg);
+
+}
+
+.card-head{
+    font-family: "Azo Sans";
+    font-weight: 700;
+    font-size:24px;
+    color:white;
+    opacity:50%;
+}
+.arrow{
+    opacity:50%;
+    font-size:24px;
+    color:white;
+}
+.arrow1{
+    font-size:18px;
+    color:white;
+}
+.arrow1:hover{
+    color:aquamarine;
+    text-decoration: none;
+}
+.arrow:hover{
+    color:aqua;
+    font-size:30px;
+    opacity:100%;
+    text-decoration: none;
+}
+.work-heading{
+    font-family: "Azo Sans";;
+    font-weight:700;
+    font-size:40px;
+    color:white;
+}
+.work-description{
+    font-family: "Azo Sans";
+    font-weight:400;
+    font-size:16px;
+    color:white;
+}
+.footer-head{
+    font-family: "Azo Sans";
+    font-weight:700;
+    font-size:20px;
+    color:white; 
+    position:relative;
+}
+.footer-head::after{
+    position:absolute;
+    content:"";
+    top:50%;
+    left:0;
+    background-image:linear-gradient(to right,#70C618, #C1FA7F);
+    width:50%;
+    height:2px;
+}
+/*.footer-head:hover.footer-head::after{
+    opacity:1;
+}*/
+.form-input{
+    font-family: "Azo Sans";
+    font-weight:400;
+    font-size:12px;
+    border-radius:30px;
+    border-width:0px;
+    padding:10px;
+    background-color:rgb(255, 255, 255,0.05);  
+    margin-bottom:10px; 
+}
+form .form-control::-webkit-input-placeholder { 
+    color: #FFFFFF;
+  }
+  
+  :-moz-placeholder {
+    color: #FFFFFF !important;
+  }
+  
+  ::-moz-placeholder {
+    color: #FFFFFF !important;
+  }
+
+.button{
+    font-family: "Azo Sans";
+    font-weight:400;
+    font-size:12px;
+    color:#FFFFFF; 
+    border-radius:30px;
+    border-width:0px;
+    padding:10px;
+    background-color:#79C91B;
+    text-align:left;
+    display:flex;
+    justify-content: space-between;
+    letter-spacing: 2px;
+}
+.contact-para{
+    font-family: "Azo Sans";
+    font-weight:400;
+    font-size:14px;
+    color:#FFFFFF; 
+}
+
+.contact{
+    color:#79C91B;
+}
+.contact:hover{
+    color:lightseagreen;
+    text-decoration: none;
+}
+.footer-section .col-md-3+.col-md-3{
+    padding-left:35px;
+    padding-right:35px;
+}
+.address{
+
+    font-family: "Azo Sans";
+    font-weight:400;
+    font-size:14px;
+    color:#FFFFFF; 
+}
+.list-container{
+    list-style-type: none;
+    padding-left:0;
+
+}
+.link-list{
+    font-family: "Azo Sans";
+    font-weight:400;
+    font-size:13px;
+    color:#FFFFFF; 
+}
+.link-list:hover{
+    color:#79C91B;
+    text-decoration: none;
+}
+.icon{
+    color:white;
+    font-size:24px;
+    transition:0.2s ease-in-out;
+}
+.icon:hover{
+    color:aqua;
+    text-decoration: none;
+    font-size:50px;
+    transform:translateY(-10%);
+    border:2px solid #79C91B;
+    padding:15px;
+    border-radius:10px;
+}
+
+.copyright{
+    color:#FFFFFF;
+    font-family: "Azo Sans";
+    font-weight:400;
+}
+
+@media screen and (min-width:992px) and (max-width:1200px){
+    .card{
+        width:200px;
+        height:200px;
+    }
+}
+
+@media screen and (max-width:768px){
+    .card{
+        width:200px;
+        height:200px;
+    }
+}
